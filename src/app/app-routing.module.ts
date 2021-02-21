@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'sigin',
+    loadChildren: () => import('./sigin/sigin.module').then( m => m.SiginPageModule)
+  },
+  {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },
+  {
+    path: 'cini',
+    loadChildren: () => import('./cini/cini.module').then( m => m.CiniPageModule)
+  },
 ];
 
 @NgModule({

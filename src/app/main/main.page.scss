@@ -1,0 +1,20 @@
+
+ion-title,ion-segment-button{
+    font-weight: 600;
+}
+ion-segment{
+    --background: #128c7e;
+    ion-segment-button{
+        --color: #87c5be;
+        --color-checked:#ffff;
+    }
+    ion-segment-button:first-of-type{
+        --padding-end:0 ;
+    --padding-start:0;
+    min-width: 16px;
+    }
+}
+ion-fab-button
+{
+--background: #128c7e;
+}
